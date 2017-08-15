@@ -3,7 +3,7 @@
 ## 安装
 
 ```
-git clone https://github.com/y8n/mini-app-seed.git
+git clone https://github.com/y8n/wechat-app-seed.git
 npm install
 ```
 
