@@ -1,5 +1,5 @@
 {
-  "name": "mini-app-seed",
+  "name": "wechat-app-seed",
   "version": "0.1.0",
   "description": "a seed project for wechat mini app",
   "main": "dist/app.js",
