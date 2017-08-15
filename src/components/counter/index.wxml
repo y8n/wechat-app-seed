@@ -1,0 +1,12 @@
+<template name="counter">
+  <view class="counter-box">
+    <view class="counter-content">
+      <block wx:if="{{count&&count>0}}">
+        <image catchtap="{{decreaseHandler}}" class="counter-subtract"
+               src="../../assets/images/subtract.png"></image>
+        <view class="counter-num">{{count}}</view>
+      </block>
+      <image catchtap="{{increaseHandler}}" class="counter-add" src="../../assets/images/add.png"></image>
+    </view>
+  </view>
+</template>

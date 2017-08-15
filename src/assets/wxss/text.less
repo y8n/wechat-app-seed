@@ -1,0 +1,35 @@
+@import './variables';
+
+// 提供 fs10 fs12 fs13 fs14 fs15 fs16 fs18 fs20 几种class
+@sizes: 20, 24, 26, 28, 30, 32, 36, 40;
+
+.loopSize(@i: 1) when (@i <= length(@sizes)) { //注意less数组是从1开始的
+  @value: extract(@sizes, @i);
+  @size: @value / 2;
+  .fs@{size} {
+    font-size: @value*@rpx;
+  }
+  .loopSize((@i + 1));
+}
+
+.loopSize;
+
+.text {
+  color: @color-text;
+}
+
+.text-primary {
+  color: @color-text-primary;
+}
+
+.text-secondary {
+  color: @color-text-secondary;
+}
+
+.text-gray {
+  color: @color-text-gray;
+}
+
+.text-gray-light {
+  color: @color-text-gray-light;
+}

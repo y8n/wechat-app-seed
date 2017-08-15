@@ -1,0 +1,46 @@
+@import './variables';
+
+view,
+text {
+  box-sizing: border-box;
+}
+
+page {
+  background-color: @color-bg;
+  font-family: @font-family-default;
+  font-size: @font-size-default;
+  line-height: @line-height-default;
+  color: @color-text;
+  box-sizing: border-box;
+}
+
+// flex 布局
+.flexable {
+  display: flex;
+}
+
+// flex 居中
+.flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  word-wrap: normal;
+}
+

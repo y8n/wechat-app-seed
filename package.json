@@ -1,0 +1,32 @@
+{
+  "name": "mini-app-seed",
+  "version": "0.1.0",
+  "description": "a seed project for wechat mini app",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "gulp dev",
+    "lint": "eslint src",
+    "build": "gulp"
+  },
+  "keywords": [
+    "wechat",
+    "mini-app"
+  ],
+  "author": "y8n",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-less": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.1",
+    "run-sequence": "^1.2.2"
+  }
+}

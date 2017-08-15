@@ -1,0 +1,9 @@
+<import src="../../components/counter/index.wxml"></import>
+
+<view>
+    <view wx:for="{{itemList}}" wx:key="{{index}}" class="fs18 list-item">
+        {{item.name}}
+        <template is="counter" data="{{...$counter['item'+index]}}"/>
+    </view>
+    <view class="fs20 list-item">总数: {{totalCount}}</view>
+</view>
